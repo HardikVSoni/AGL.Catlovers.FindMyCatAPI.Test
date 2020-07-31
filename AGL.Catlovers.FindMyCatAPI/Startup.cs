@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using AGL.Catlovers.FindMyCatAPI.Interfaces;
+using AGL.Catlovers.FindMyCatAPI.Repository;
 
 namespace AGL.Catlovers.FindMyCatAPI
 {
@@ -26,6 +28,10 @@ namespace AGL.Catlovers.FindMyCatAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddSingleton<ICatsInterface, CatsRepository>();
+
+            var sp = services.BuildServiceProvider();
+            var catsService = sp.GetService<ICatsInterface>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,7 +45,6 @@ namespace AGL.Catlovers.FindMyCatAPI
             {
                 app.UseHsts();
             }
-
             app.UseHttpsRedirection();
             app.UseMvc();
         }

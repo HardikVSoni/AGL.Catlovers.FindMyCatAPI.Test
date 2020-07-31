@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AGL.Catlovers.FindMyCatAPI", "AGL.Catlovers.FindMyCatAPI\AGL.Catlovers.FindMyCatAPI.csproj", "{06BC539B-4EE5-414A-A193-FCE951D81C92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AGL.Catlovers.FindMyCatAPI", "AGL.Catlovers.FindMyCatAPI\AGL.Catlovers.FindMyCatAPI.csproj", "{06BC539B-4EE5-414A-A193-FCE951D81C92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AGL.Catlovers.FindMyCatAPI.Test", "AGL.Catlovers.FindMyCatAPI.Test\AGL.Catlovers.FindMyCatAPI.Test.csproj", "{8D0B4302-9C58-4F6E-8EDB-717A0C1BE41C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{06BC539B-4EE5-414A-A193-FCE951D81C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06BC539B-4EE5-414A-A193-FCE951D81C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06BC539B-4EE5-414A-A193-FCE951D81C92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D0B4302-9C58-4F6E-8EDB-717A0C1BE41C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D0B4302-9C58-4F6E-8EDB-717A0C1BE41C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D0B4302-9C58-4F6E-8EDB-717A0C1BE41C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D0B4302-9C58-4F6E-8EDB-717A0C1BE41C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

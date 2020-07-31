@@ -11,6 +11,12 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="Unity" Version="5.11.7" />
+    <PackageReference Include="Unity.Abstractions" Version="5.11.6" />
+    <PackageReference Include="Unity.Container" Version="5.11.8" />
+    <PackageReference Include="Unity.Interception" Version="5.11.1" />
+    <PackageReference Include="Unity.Mvc" Version="5.11.1" />
   </ItemGroup>
 
 </Project>
